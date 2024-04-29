@@ -65,10 +65,69 @@
 			text-decoration: none
 		}
 	</style>
+	<style>
+        /* Width */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+            /* For Edge */
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background-color: #033342;
+            /* Fallback color */
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #ffffff;
+        }
+
+        /* Width and color for Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #ffffff #033342;
+        }
+
+        /* Width and color for Edge */
+        * {
+            -ms-overflow-style: none;
+            /* Hide scrollbar in Edge */
+        }
+
+        *::-webkit-scrollbar {
+            width: thin;
+            /* For Firefox */
+            height: thin;
+            /* For Firefox */
+        }
+
+        *::-webkit-scrollbar-track {
+            background-color: #033342;
+            /* Fallback color for Firefox */
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        *::-webkit-scrollbar-thumb:hover {
+            background-color: #ffffff;
+        }
+    </style>
 	<style id='global-styles-inline-css'>
 		body {
 			--wp--preset--color--black: rgb(3, 40, 57);
 			--wp--preset--color--amalya: #031B30;
+			--wp--preset--color--amalye: #02111f;
 			--wp--preset--color--amalyb: #033342;
 			--wp--preset--color--amalyc: #94CA1E;
 			--wp--preset--color--cyan-bluish-gray: #abb8c3;
@@ -123,6 +182,10 @@
 
 		.current {
 			color: var(--wp--preset--color--amalyc) !important;
+		}
+		.first-maint{
+			background-color: var(--wp--preset--color--amalye) !important;
+
 		}
 
 		body .is-layout-flow>.alignleft {
@@ -484,8 +547,8 @@
 		href='https://fonts.googleapis.com/css?family=Nunito+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.5.2'
 		media='all' />
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-	<script src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
-	<script src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
+	<script src="resouces-foldera/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
+	<script src="resouces-foldera/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
 	<script src="resouces-folder/plugins/romethemeform/widgets/assets/js/rtform_text8daf.js?ver=1.1.4"
 		id="rtform-text-js-js"></script>
 	<script src="resouces-folder/plugins/romethemeform/widgets/assets/js/rform_select8daf.js?ver=1.1.4"
@@ -505,18 +568,7 @@
 	<script
 		src="resouces-folder/plugins/template-kit-export/public/assets/js/template-kit-export-public.min365c.js?ver=1.0.21"
 		id="template-kit-export-js"></script>
-	<link rel="https://api.w.org/" href="wp-json/index.html" />
-	<link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/225.json" />
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
-	<meta name="generator" content="WordPress 6.5.2" />
-	<link rel="canonical" href="index.html" />
-	<link rel='shortlink' href='index.html' />
-	<link rel="alternate" type="application/json+oembed"
-		href="wp-json/oembed/1.0/embedb226.json?url=https%3A%2F%2Ftykit.rometheme.pro%2Fthevent%2F" />
-	<link rel="alternate" type="text/xml+oembed"
-		href="wp-json/oembed/1.0/embed9676?url=https%3A%2F%2Ftykit.rometheme.pro%2Fthevent%2F&amp;format=xml" />
-	<meta name="generator"
-		content="Elementor 3.21.3; features: e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-swap">
+
 	<style>
 		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
 		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -983,7 +1035,7 @@
 									}
 								</style>
 								<img width="100" height="50" src="assets/img/logo1.png"
-									class="attachment-full size-full wp-image-47 findmain" alt="assets/img/logo1.png" />
+									class="logo1.png findmain" alt="assets/img/logo1.png" />
 							</div>
 						</div>
 					</div>
@@ -1082,8 +1134,8 @@
 											<div class="elementskit-site-title">
 												<a class="elementskit-nav-logo"
 													href="https://tykit.rometheme.pro/thevent" target="_self" rel="">
-													<img width="350" height="100" src="assets/img/logo.png"
-														class="attachment-full size-full" alt="Main-Logo.png"
+													<img width="350" height="100" src="assets/img/logo1.png"
+														class="attachment-full size-full" alt="Main-logo1.png"
 														decoding="async" sizes="(max-width: 350px) 100vw, 350px" />
 												</a>
 											</div>
@@ -1726,10 +1778,9 @@
 						data-id="e97307e" data-element_type="container">
 						<div class="elementor-element elementor-element-08aab76 elementor-widget elementor-widget-image"
 							data-id="08aab76" data-element_type="widget" data-widget_type="image.default">
-							<div class="elementor-widget-container">
-								<img decoding="async" width="350" height="100" src="assets/img/logo.png"
-									class="attachment-full size-full wp-image-47" alt="Main-Logo.png"
-									sizes="(max-width: 350px) 100vw, 350px" />
+							<div class="elementor-widget-container" style="background-color: #032739 !important;">
+								<img decoding="async" width="200" height="50" src="assets/img/logo1.png"
+									class="attachment-full size-full wp-image-47" alt="Main-logo1.png"/>
 							</div>
 						</div>
 					</div>
@@ -3575,9 +3626,8 @@
 							<div class="elementor-element elementor-element-25ac759 elementor-widget elementor-widget-image"
 								data-id="25ac759" data-element_type="widget" data-widget_type="image.default">
 								<div class="elementor-widget-container">
-									<img width="350" height="100" src="assets/img/logo.png"
-										class="attachment-full size-full wp-image-47" alt="Main-Logo.png"
-										sizes="(max-width: 350px) 100vw, 350px" />
+									<img width="100" height="50" src="assets/img/logo1.png"
+										class="attachment-full size-full wp-image-47" alt="Main-logo1.png"/>
 								</div>
 							</div>
 						</div>
@@ -3625,9 +3675,9 @@
 		});
 	</script>
 	<link rel='stylesheet' id='mediaelement-css'
-		href='wp-includes/js/mediaelement/mediaelementplayer-legacy.min1f61.css?ver=4.2.17' media='all' />
+		href='resouces-foldera/js/mediaelement/mediaelementplayer-legacy.min1f61.css?ver=4.2.17' media='all' />
 	<link rel='stylesheet' id='wp-mediaelement-css'
-		href='wp-includes/js/mediaelement/wp-mediaelement.mine63c.css?ver=6.5.2' media='all' />
+		href='resouces-foldera/js/mediaelement/wp-mediaelement.mine63c.css?ver=6.5.2' media='all' />
 	<link rel='stylesheet' id='elementor-post-201-css'
 		href='resouces-folder/uploads/sites/159/elementor/css/post-201f585.css?ver=1714037992' media='all' />
 	<link rel='stylesheet' id='e-animations-css'
@@ -3650,21 +3700,21 @@
 	<script id="mediaelement-core-js-before">
 		var mejsL10n = { "language": "en", "strings": { "mejs.download-file": "Download File", "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/", "mejs.fullscreen": "Fullscreen", "mejs.play": "Play", "mejs.pause": "Pause", "mejs.time-slider": "Time Slider", "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.", "mejs.live-broadcast": "Live Broadcast", "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.", "mejs.unmute": "Unmute", "mejs.mute": "Mute", "mejs.volume-slider": "Volume Slider", "mejs.video-player": "Video Player", "mejs.audio-player": "Audio Player", "mejs.captions-subtitles": "Captions\/Subtitles", "mejs.captions-chapters": "Chapters", "mejs.none": "None", "mejs.afrikaans": "Afrikaans", "mejs.albanian": "Albanian", "mejs.arabic": "Arabic", "mejs.belarusian": "Belarusian", "mejs.bulgarian": "Bulgarian", "mejs.catalan": "Catalan", "mejs.chinese": "Chinese", "mejs.chinese-simplified": "Chinese (Simplified)", "mejs.chinese-traditional": "Chinese (Traditional)", "mejs.croatian": "Croatian", "mejs.czech": "Czech", "mejs.danish": "Danish", "mejs.dutch": "Dutch", "mejs.english": "English", "mejs.estonian": "Estonian", "mejs.filipino": "Filipino", "mejs.finnish": "Finnish", "mejs.french": "French", "mejs.galician": "Galician", "mejs.german": "German", "mejs.greek": "Greek", "mejs.haitian-creole": "Haitian Creole", "mejs.hebrew": "Hebrew", "mejs.hindi": "Hindi", "mejs.hungarian": "Hungarian", "mejs.icelandic": "Icelandic", "mejs.indonesian": "Indonesian", "mejs.irish": "Irish", "mejs.italian": "Italian", "mejs.japanese": "Japanese", "mejs.korean": "Korean", "mejs.latvian": "Latvian", "mejs.lithuanian": "Lithuanian", "mejs.macedonian": "Macedonian", "mejs.malay": "Malay", "mejs.maltese": "Maltese", "mejs.norwegian": "Norwegian", "mejs.persian": "Persian", "mejs.polish": "Polish", "mejs.portuguese": "Portuguese", "mejs.romanian": "Romanian", "mejs.russian": "Russian", "mejs.serbian": "Serbian", "mejs.slovak": "Slovak", "mejs.slovenian": "Slovenian", "mejs.spanish": "Spanish", "mejs.swahili": "Swahili", "mejs.swedish": "Swedish", "mejs.tagalog": "Tagalog", "mejs.thai": "Thai", "mejs.turkish": "Turkish", "mejs.ukrainian": "Ukrainian", "mejs.vietnamese": "Vietnamese", "mejs.welsh": "Welsh", "mejs.yiddish": "Yiddish" } };
 	</script>
-	<script src="wp-includes/js/mediaelement/mediaelement-and-player.min1f61.js?ver=4.2.17"
+	<script src="resouces-foldera/js/mediaelement/mediaelement-and-player.min1f61.js?ver=4.2.17"
 		id="mediaelement-core-js"></script>
-	<script src="wp-includes/js/mediaelement/mediaelement-migrate.mine63c.js?ver=6.5.2"
+	<script src="resouces-foldera/js/mediaelement/mediaelement-migrate.mine63c.js?ver=6.5.2"
 		id="mediaelement-migrate-js"></script>
 	<script id="mediaelement-js-extra">
-		var _wpmejsSettings = { "pluginPath": "\/thevent\/wp-includes\/js\/mediaelement\/", "classPrefix": "mejs-", "stretching": "responsive", "audioShortcodeLibrary": "mediaelement", "videoShortcodeLibrary": "mediaelement" };
+		var _wpmejsSettings = { "pluginPath": "\/thevent\/resouces-foldera\/js\/mediaelement\/", "classPrefix": "mejs-", "stretching": "responsive", "audioShortcodeLibrary": "mediaelement", "videoShortcodeLibrary": "mediaelement" };
 	</script>
-	<script src="wp-includes/js/mediaelement/wp-mediaelement.mine63c.js?ver=6.5.2" id="wp-mediaelement-js"></script>
+	<script src="resouces-foldera/js/mediaelement/wp-mediaelement.mine63c.js?ver=6.5.2" id="wp-mediaelement-js"></script>
 	<script src="resouces-folder/plugins/elementor/assets/js/webpack.runtime.min11d9.js?ver=3.21.3"
 		id="elementor-webpack-runtime-js"></script>
 	<script src="resouces-folder/plugins/elementor/assets/js/frontend-modules.min11d9.js?ver=3.21.3"
 		id="elementor-frontend-modules-js"></script>
 	<script src="resouces-folder/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
 		id="elementor-waypoints-js"></script>
-	<script src="wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+	<script src="resouces-foldera/js/jquery/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js"></script>
 	<script id="elementor-frontend-js-before">
 		var elementorFrontendConfig = {
 			"environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } },
